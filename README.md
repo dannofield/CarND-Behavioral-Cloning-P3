@@ -18,13 +18,27 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image1]: ./IMG_RESULTS/center_2016_12_01_13_30_48_287.jpg "Center 1"
+[image2]: ./IMG_RESULTS/center_2016_12_01_13_31_13_037.jpg "Center 2"
+[image3]: ./IMG_RESULTS/center_cropped1.jpg "center cropped 1"
+[image4]: ./IMG_RESULTS/center_cropped1G.jpg "center cropped 1 Gray"
+[image5]: ./IMG_RESULTS/center_cropped2.jpg "center cropped 2"
+[image6]: ./IMG_RESULTS/center_cropped2G.jpg "center cropped 2 Gray"
+
+[image8]: ./IMG_RESULTS/center_2016_12_01_13_30_48_287.jpg "Center 1"
+[image9]: ./IMG_RESULTS/center_2016_12_01_13_31_13_037.jpg "Center 2"
+[image10]: ./IMG_RESULTS/center_cropped1.jpg "center cropped 1"
+[image11]: ./IMG_RESULTS/center_cropped1G.jpg "center cropped 1 Gray"
+[image12]: ./IMG_RESULTS/center_cropped2.jpg "center cropped 2"
+[image13]: ./IMG_RESULTS/center_cropped2G.jpg "center cropped 2 Gray"
+
+[image14]: ./IMG_RESULTS/center_2016_12_01_13_30_48_287.jpg "Center 1"
+[image15]: ./IMG_RESULTS/center_2016_12_01_13_31_13_037.jpg "Center 2"
+[image16]: ./IMG_RESULTS/center_cropped1.jpg "center cropped 1"
+[image17]: ./IMG_RESULTS/center_cropped1G.jpg "center cropped 1 Gray"
+[image18]: ./IMG_RESULTS/center_cropped2.jpg "center cropped 2"
+[image19]: ./IMG_RESULTS/center_cropped2G.jpg "center cropped 2 Gray"
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
