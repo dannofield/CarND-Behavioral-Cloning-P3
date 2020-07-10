@@ -39,7 +39,7 @@ The goals / steps of this project are the following:
 [image18]: ./IMG_RESULTS/right_cropped2.jpg "right_cropped 2"
 [image19]: ./IMG_RESULTS/right_cropped2G.jpg "right_cropped 2 Gray"
 
-[image20]: ./IMG_RESULTS/center_2016_12_01_13_30_48_287.jpg "Center 1"
+[image20]: ./IMG_RESULTS/Model.jpg "Model"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -162,28 +162,34 @@ Since I used all 3 cameras I did not have to augment the data set by flipped ima
 After the collection process, I had around 9000 number of data points. I then preprocessed this data by cropping the images so the model does not get distracted by things like the sky, trees, etc.:
 
 Here is the center camera image cropped
+
 ![alt text][image3]
 ![alt text][image5]
 
 Left camera image cropped
+
 ![alt text][image10]
 ![alt text][image12]
 
 Right camera image cropped
+
 ![alt text][image16]
 ![alt text][image18]
 
 After this I normalized the data by converting this data to gray scale.
 
 Here is the center camera image cropped
+
 ![alt text][image4]
 ![alt text][image6]
 
 Left camera image cropped
+
 ![alt text][image11]
 ![alt text][image13]
 
 Right camera image cropped
+
 ![alt text][image17]
 ![alt text][image19]
 
