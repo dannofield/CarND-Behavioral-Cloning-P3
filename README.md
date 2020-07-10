@@ -95,6 +95,32 @@ The model includes RELU layers to introduce nonlinearity, and the data is normal
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
+```python
+model = Sequential()
+#normalize the images. Set up lambda layer
+model.add(Lambda(lambda x: (x /255.0) - 0.5, input_shape = input_shape))
+
+#Cropping the image
+model.add(Cropping2D(cropping=((50,20),(0,0)), input_shape=input_shape))
+
+model.add(Convolution2D(24,5,5,subsample=(2,2),activation='relu'))
+model.add(Convolution2D(36,5,5,subsample=(2,2),activation='relu'))
+model.add(Convolution2D(48,5,5,subsample=(2,2),activation='relu'))
+model.add(Convolution2D(64,3,3,subsample=(2,2),activation='relu'))
+model.add(Convolution2D(64,3,3,subsample=(2,2),activation='relu'))
+
+model.add(Flatten())
+
+#Neurons
+model.add(Dense(100))
+model.add(Dense(50))    
+model.add(Dense(1))
+
+#Regresion network
+model.compile(loss='mse', optimizer='adam')
+# Fit the model
+history = model.fit(X_train, y_train, validation_split=0.2, shuffle = True, nb_epoch=5)
+```
 #### 2. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 136).
@@ -200,5 +226,14 @@ Then I repeated this process on track two in order to get more data points.
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5 as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 5.
 
+I used an adam optimizer so that manually training the learning rate wasn't necessary.
+
+# Conclusion
+
+Using keras for defining and implementing a neural network was definitely easier than just using Tensorflow. But I am glad that Udacity explained all the process of building a network like that from the ground up, using raw python and defininf the operations by ourselves.
+
+At the end, my model performed very good driving in the center of the road without lossing control. 
+
+Using the NVIDIA model along with two laps and all three cameras was definitely a good combination to achive the result.
