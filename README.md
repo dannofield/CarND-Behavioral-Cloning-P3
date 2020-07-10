@@ -140,58 +140,63 @@ Here is a visualization of the architecture
 
 #### 3. Creation of the Training Set & Training Process
 
+I used all 3 cameras and the model performed very good so I did not have to augment the data set by flipped images.
+
+After the collection process, I had around 9000 number of data points. I then preprocessed this data by cropping the images so the model does not get distracted by things like the sky, trees, etc.:
+
+Then, I normalized the data by converting this data to gray scale.
+
+Here are the pictures showing the image pre-processing
+
+#### Center Camera
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
 ![alt text][image1]
 ![alt text][image2]
-
-I used the left camera with a correction angle of 0.7
-
-![alt text][image8]
-![alt text][image9]
-
-Then I used the right camera with a correction angle of 0.7
-
-![alt text][image14]
-![alt text][image15]
-
-Then I repeated this process on track two in order to get more data points.
-
-Since I used all 3 cameras I did not have to augment the data set by flipped images.
-
-After the collection process, I had around 9000 number of data points. I then preprocessed this data by cropping the images so the model does not get distracted by things like the sky, trees, etc.:
 
 Here is the center camera image cropped
 
 ![alt text][image3]
 ![alt text][image5]
 
+Here is the center camera image normalized
+
+![alt text][image4]
+![alt text][image6]
+
+#### Left Camera
+I used the left camera with a correction angle of 0.7
+
+![alt text][image8]
+![alt text][image9]
+
 Left camera image cropped
 
 ![alt text][image10]
 ![alt text][image12]
+
+Left camera image normalized
+
+![alt text][image11]
+![alt text][image13]
+
+#### Right Camera
+Then I used the right camera with a correction angle of 0.7
+
+![alt text][image14]
+![alt text][image15]
 
 Right camera image cropped
 
 ![alt text][image16]
 ![alt text][image18]
 
-After this I normalized the data by converting this data to gray scale.
-
-Here is the center camera image cropped
-
-![alt text][image4]
-![alt text][image6]
-
-Left camera image cropped
-
-![alt text][image11]
-![alt text][image13]
-
-Right camera image cropped
+Right camera image normalized
 
 ![alt text][image17]
 ![alt text][image19]
+
+Then I repeated this process on track two in order to get more data points.
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
