@@ -236,4 +236,4 @@ Using keras for defining and implementing a neural network was definitely easier
 
 At the end, my model performed very good driving in the center of the road without lossing control. 
 
-Using the NVIDIA model along with two laps and all three cameras was definitely a good combination to achive the result.
+Using the NVIDIA model along with two laps and all three cameras was definitely a good combination to achive the result
